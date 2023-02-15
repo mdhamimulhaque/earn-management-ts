@@ -11,7 +11,6 @@ const Main = () => {
             <HeaderBoxArea>
                 <Header />
             </HeaderBoxArea>
-
             <Outlet />
             <FooterBoxArea>
                 <Footer />
