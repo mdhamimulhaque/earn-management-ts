@@ -36,11 +36,7 @@ export const RoadMapFirstPositionBox = styled.div`
     transform: translateX(-125px);
     top: 10px;
   }
-  @media screen and (max-width: 424px) {
-    min-height: 55px;
-    max-width: 66px;
-    transform: translateX(-105px);
-  }
+  
 `;
 export const MiddleRoundFirstBox = styled.div`
    min-height: 102px;
@@ -65,10 +61,7 @@ export const MiddleRoundFirstBox = styled.div`
         min-height: 50px;
     max-width: 50px;
   }
-  @media screen and (max-width: 424px) {
-    min-height: 30px;
-    max-width: 30px;
-  }
+
 `;
 export const RoadMapPositionBox = styled.div<direProps>`
     min-height: 133px;
@@ -97,10 +90,7 @@ export const RoadMapPositionBox = styled.div<direProps>`
     max-width: 105px;
     border-radius: 16px;
   }
-  @media screen and (max-width: 424px) {
-    min-height: 55px;
-    max-width: 66px;
-  }
+
 `;
 export const MiddleRound = styled.div`
      min-height: 102px;
@@ -124,9 +114,5 @@ export const MiddleRound = styled.div`
     @media ${({ theme }) => theme.mediaQuery.xs} {
         min-height: 50px;
     max-width: 50px;
-  }
-  @media screen and (max-width: 424px) {
-    min-height: 30px;
-    max-width: 30px;
   }
 `;
