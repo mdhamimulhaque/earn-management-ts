@@ -151,13 +151,22 @@ display:flex;
 position: relative;
 &::before{
   content:'';
-  height:70%;
+  height:50px;
   width:1px;
   background-color:#404053;
   position:absolute;
   top:50%;
   transform:translateY(-50%);
   left: -10px;
+  @media ${({ theme }) => theme.mediaQuery.lg} {
+    height:40px;
+  }
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    height:30px;
+  }
+  @media ${({ theme }) => theme.mediaQuery.xs} {
+    height:30px;
+  }
   @media screen and (max-width: 374px) {
       display: none;
   }
