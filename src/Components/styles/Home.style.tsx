@@ -97,20 +97,7 @@ export const HomeTopText = styled.p`
 `;
 export const HomeTopImg = styled.img`
         background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 100%);
-       @media ${({ theme }) => theme.mediaQuery.xxl} {
-            max-width: 100%;
-  }
-  @media ${({ theme }) => theme.mediaQuery.xl} {
-    max-width: 100%;
-  }
-  @media ${({ theme }) => theme.mediaQuery.lg} {
-    max-width: 100%;
-  }
-  @media ${({ theme }) => theme.mediaQuery.md} {
-    width: 100%;
-    object-fit:cover;
-  }
-  @media ${({ theme }) => theme.mediaQuery.xs} {
+  @media screen and (max-width: 1599px) {
     width: 100%;
     object-fit:cover;
   }

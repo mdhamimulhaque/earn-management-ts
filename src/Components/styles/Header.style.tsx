@@ -94,6 +94,7 @@ export const ResponsiveSocialArea = styled.div`
 export const ResponsiveLogoWrapper = styled.div`
    padding: 20px;
 img{
-    width: 70%;
+   max-width: 55px;
+   width:100%;
 }
 `;
