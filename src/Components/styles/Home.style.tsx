@@ -97,20 +97,7 @@ export const HomeTopText = styled.p`
 `;
 export const HomeTopImg = styled.img`
         background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 100%);
-       @media ${({ theme }) => theme.mediaQuery.xxl} {
-            max-width: 100%;
-  }
-  @media ${({ theme }) => theme.mediaQuery.xl} {
-    max-width: 100%;
-  }
-  @media ${({ theme }) => theme.mediaQuery.lg} {
-    max-width: 100%;
-  }
-  @media ${({ theme }) => theme.mediaQuery.md} {
-    width: 100%;
-    object-fit:cover;
-  }
-  @media ${({ theme }) => theme.mediaQuery.xs} {
+  @media screen and (max-width: 1599px) {
     width: 100%;
     object-fit:cover;
   }
@@ -133,11 +120,11 @@ background-color: rgba(255, 255, 255, 0.03);
   }
     @media ${({ theme }) => theme.mediaQuery.xs} {
       font-size:12px;
+      padding-left: 15px;
   }
 `;
 export const searchButtonSelectWrapper = styled.div`
 display: flex;
-
 `;
 export const SearchInput = styled.input`
  background: transparent;
@@ -148,6 +135,29 @@ export const SearchInput = styled.input`
 
 export const SearchSelectBtnArea = styled.div`
 display:flex;
+position: relative;
+&::before{
+  content:'';
+  height:50px;
+  width:1px;
+  background-color:#404053;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left: -10px;
+  @media ${({ theme }) => theme.mediaQuery.lg} {
+    height:40px;
+  }
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    height:30px;
+  }
+  @media ${({ theme }) => theme.mediaQuery.xs} {
+    height:30px;
+  }
+  @media screen and (max-width: 374px) {
+      display: none;
+  }
+}
 `;
 export const SearchBoxSelect = styled.select`
  background: transparent;
@@ -213,7 +223,7 @@ border-radius: 90px;
     @media ${({ theme }) => theme.mediaQuery.md} {
       padding: 11px 14px;
     max-width: 160px;
-    top: 83px;
+    top: 62px;
     left: 0px;
   }
     @media ${({ theme }) => theme.mediaQuery.xs} {

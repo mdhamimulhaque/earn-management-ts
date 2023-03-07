@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface direProps {
-    posiBox: boolean;
+  posiBox: boolean;
 }
 
 export const RoadMapFirstPositionBox = styled.div`
@@ -36,6 +36,13 @@ export const RoadMapFirstPositionBox = styled.div`
     transform: translateX(-125px);
     top: 10px;
   }
+  @media screen and (max-width: 424px) {
+    min-height: 65px;
+    max-width: 75px;
+    transform: translateX(-109px);
+  }
+  
+  
 `;
 export const MiddleRoundFirstBox = styled.div`
    min-height: 102px;
@@ -52,14 +59,16 @@ export const MiddleRoundFirstBox = styled.div`
         min-height: 65px;
     max-width: 65px;
   }
-    @media ${({ theme }) => theme.mediaQuery.md} {
-        min-height: 50px;
+
+  @media screen and (max-width: 991px) {
+    min-height: 50px;
     max-width: 50px;
   }
-    @media ${({ theme }) => theme.mediaQuery.xs} {
-        min-height: 50px;
-    max-width: 50px;
+  @media screen and (max-width: 424px) {
+    min-height: 42px;
+    max-width: 42px;
   }
+
 `;
 export const RoadMapPositionBox = styled.div<direProps>`
     min-height: 133px;
@@ -88,6 +97,11 @@ export const RoadMapPositionBox = styled.div<direProps>`
     max-width: 105px;
     border-radius: 16px;
   }
+  @media screen and (max-width: 424px) {
+    min-height: 65px;
+    max-width: 75px;
+  }
+
 `;
 export const MiddleRound = styled.div`
      min-height: 102px;
@@ -104,12 +118,13 @@ export const MiddleRound = styled.div`
         min-height: 65px;
     max-width: 65px;
   }
-    @media ${({ theme }) => theme.mediaQuery.md} {
-        min-height: 50px;
+
+   @media screen and (max-width: 991px) {
+    min-height: 50px;
     max-width: 50px;
   }
-    @media ${({ theme }) => theme.mediaQuery.xs} {
-        min-height: 50px;
-    max-width: 50px;
+   @media screen and (max-width: 424px) {
+    min-height: 42px;
+    max-width: 42px;
   }
 `;

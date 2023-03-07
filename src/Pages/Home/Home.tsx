@@ -2,7 +2,7 @@ import React from 'react';
 import ImgRightTop from '../../assets/images/homeRight.png';
 import searchBtnIcon from '../../assets/images/Icons/search.png';
 import { HomeWrapperArea, HomeTopWrapper, HomeLeftSide, HomeTopHeading, HomeTopText, HomeTopImg, SearchBoxWrapper, SearchInput, SearchBoxSelect, SearchBoxButton, HomeRightSide, SearchSelectBtnArea, ImgUpperText1, ImgUpperText2, ImgUpperText3, ImgUpperText4 } from '../../Components/styles/Home.style';
-import { Br, Img, Option } from '../../Components/styles';
+import { Img, Option } from '../../Components/styles';
 import RoadMap from './Roadmap/RoadMap';
 
 
